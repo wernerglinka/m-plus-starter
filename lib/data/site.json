@@ -1,0 +1,29 @@
+{
+  "title": "Metalsmith Micro Starter",
+  "description": "Starter to build Metalsmith websites with Claude.",
+  "url": "https://example.com",
+  "locale": "en_US",
+
+  "defaultImage": "/assets/images/CLAUDE+Metalsmith.jpg",
+
+  "organization": {
+    "name": "",
+    "logo": ""
+  },
+
+  "social": {
+    "twitterCreator": "@author",
+    "locale": "en_US"
+  },
+
+  "sitemap": {
+    "changefreq": "weekly",
+    "priority": 0.8
+  },
+
+  "siteOwner": "Your Name Here",
+  "validate": {
+    "google": "",
+    "ms": ""
+  }
+}

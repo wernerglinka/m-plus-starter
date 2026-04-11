@@ -1,0 +1,43 @@
+{
+  "componentsBasePath": "lib/layouts/components",
+  "sectionsDir": "sections",
+  "partialsDir": "_partials",
+
+  "source": "./src",
+  "destination": "./build",
+
+  "layouts": {
+    "directory": "lib/layouts"
+  },
+
+  "css": {
+    "entry": "lib/assets/main.css",
+    "output": "assets/main.css"
+  },
+
+  "js": {
+    "entry": "lib/assets/main.js",
+    "output": "assets/main.js"
+  },
+
+  "data": {
+    "directory": "lib/data"
+  },
+
+  "links": {
+    "hostnames": ["http://localhost:3000/"]
+  },
+
+  "menus": {
+    "exclude": ["index.html", "404.html", "robots.txt"]
+  },
+
+  "seo": {
+    "metadataPath": "data.site"
+  },
+
+  "shiki": {
+    "theme": "material-theme-palenight",
+    "theme-color": "dark"
+  }
+}

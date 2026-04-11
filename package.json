@@ -1,0 +1,40 @@
+{
+  "name": "m-plus-starter",
+  "version": "0.0.1",
+  "description": "A component-based micro starter for Metalsmith to be used with Claude",
+  "type": "module",
+  "keywords": [
+    "metalsmith",
+    "starter",
+    "components",
+    "structured-content",
+    "static-site-generator"
+  ],
+  "author": "werner@glinka.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wernerglinka/m-plus-starter.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production node metalsmith.js",
+    "start": "NODE_ENV=development node metalsmith.js --watch",
+    "start:debug": "NODE_ENV=development DEBUG=@metalsmith* node metalsmith.js --watch",
+    "serve": "browser-sync start --server 'build'",
+    "format": "prettier --write \"**/*.{js,json,njk,css}\"",
+    "lint": "eslint --fix .",
+    "fix": "npm run format && npm run lint"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.0",
+    "prettier-plugin-jinja-template": "^2.1.0"
+  },
+  "dependencies": {
+    "m-plus": "github:wernerglinka/m-plus"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
