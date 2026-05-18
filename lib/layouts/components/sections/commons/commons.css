@@ -67,7 +67,7 @@
   }
 
   &.first-text-section .text {
-    padding-block: 0 !important;
+    padding-block: 0;
   }
 
   /* 

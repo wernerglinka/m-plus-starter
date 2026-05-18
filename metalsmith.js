@@ -12,19 +12,19 @@ import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
 import createSite from 'm-plus';
 
-const thisFile = fileURLToPath( import.meta.url );
-const thisDirectory = dirname( thisFile );
+const thisFile = fileURLToPath(import.meta.url);
+const thisDirectory = dirname(thisFile);
 
-const site = createSite( thisDirectory );
+const site = createSite(thisDirectory);
 
 /**
  * Run the build when this file is executed directly.
  * --watch flag triggers dev mode with BrowserSync live-reload.
  */
-if ( process.argv[ 1 ] === thisFile ) {
-  const isWatching = process.argv.includes( '--watch' );
+if (process.argv[1] === thisFile) {
+  const isWatching = process.argv.includes('--watch');
 
-  if ( isWatching ) {
+  if (isWatching) {
     await site.watch();
   } else {
     await site.build();

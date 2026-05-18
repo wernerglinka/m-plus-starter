@@ -1,20 +1,11 @@
 {
   "name": "header",
   "type": "section",
-  "styles": [
-    "header.css"
-  ],
-  "scripts": [
-    "header.js"
-  ],
-  "requires": [
-    "branding",
-    "navigation"
-  ],
+  "styles": ["header.css"],
+  "scripts": ["header.js"],
+  "requires": ["branding", "navigation"],
   "validation": {
-    "required": [
-      "sectionType"
-    ],
+    "required": ["sectionType"],
     "properties": {
       "sectionType": {
         "type": "string",

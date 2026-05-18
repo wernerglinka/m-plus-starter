@@ -35,7 +35,7 @@ body.modal-active {
 }
 
 /**
- * Heading Styles 
+ * Heading Styles
  */
 :is(h1, h2, h3, h4) {
   font-family: var(--font-heading);
@@ -140,7 +140,6 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   overflow: hidden;
 
   svg {
@@ -162,17 +161,23 @@ svg {
   }
 }
 
-/** 
- * Vertical Rhythm Utility 
+/**
+ * Vertical Rhythm Utility
  * https://every-layout.dev/layouts/stack/
  */
 
 .flow {
+  /*
+   * Stack pattern: zero margin-top on every descendant, then restore it
+   * between adjacent direct children. The :not(:first-child) form has
+   * specificity (0,2,0), beating the (0,1,0) of `& *`, so the cascade
+   * works regardless of source order rather than relying on it.
+   */
   & * {
     margin-top: 0;
   }
 
-  & > * + * {
+  & > *:not(:first-child) {
     margin-top: var(--flow-space, 1em);
   }
 }

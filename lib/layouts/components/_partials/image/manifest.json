@@ -1,16 +1,11 @@
 {
   "name": "image",
   "type": "partial",
-  "styles": [
-    "image.css"
-  ],
+  "styles": ["image.css"],
   "scripts": [],
   "requires": [],
   "validation": {
-    "required": [
-      "src",
-      "alt"
-    ],
+    "required": ["src", "alt"],
     "properties": {
       "src": {
         "type": "string"

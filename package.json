@@ -21,13 +21,13 @@
     "start": "NODE_ENV=development node metalsmith.js --watch",
     "start:debug": "NODE_ENV=development DEBUG=@metalsmith* node metalsmith.js --watch",
     "serve": "browser-sync start --server 'build'",
-    "format": "prettier --write \"**/*.{js,json,njk,css}\"",
-    "lint": "eslint --fix .",
-    "fix": "npm run format && npm run lint"
+    "format": "biome format --write . && prettier --write \"**/*.njk\"",
+    "lint": "biome lint --write .",
+    "fix": "biome check --write . && prettier --write \"**/*.njk\""
   },
   "devDependencies": {
+    "@biomejs/biome": "2.4.15",
     "browser-sync": "^3.0.4",
-    "eslint": "^9.39.2",
     "prettier": "^3.8.0",
     "prettier-plugin-jinja-template": "^2.1.0"
   },

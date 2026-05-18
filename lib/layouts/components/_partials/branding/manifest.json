@@ -1,26 +1,18 @@
 {
   "name": "branding",
   "type": "partial",
-  "styles": [
-    "branding.css"
-  ],
+  "styles": ["branding.css"],
   "scripts": [],
   "requires": [],
   "validation": {
-    "required": [
-      "link",
-      "img"
-    ],
+    "required": ["link", "img"],
     "properties": {
       "link": {
         "type": "string"
       },
       "img": {
         "type": "object",
-        "required": [
-          "src",
-          "alt"
-        ],
+        "required": ["src", "alt"],
         "properties": {
           "src": {
             "type": "string"

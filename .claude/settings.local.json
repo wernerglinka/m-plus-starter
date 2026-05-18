@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(NODE_ENV=development node:*)",
+      "Bash(timeout 10 npm start)",
+      "Bash(npm view:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(gh issue view:*)",
+      "WebFetch(domain:metalsmith.io)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nMigrate to Metalsmith 2.7.0 with native statik method\n\n- Replace metalsmith-static-files plugin with native statik\\(\\)\n- Move static assets \\(images\\) to src/assets/ for statik pass-through\n- Keep bundler inputs \\(main.css, main.js, styles/\\) in lib/assets/\n- Update watch paths for new asset structure\n- Remove unused monokai.css\n- Add migration-ms2.7.md documenting the migration process\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(npx biome *)",
+      "Bash(npx prettier *)"
+    ]
+  }
+}

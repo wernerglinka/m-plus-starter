@@ -91,6 +91,27 @@
     border-radius: 4px;
     transition: outline 0.2s ease;
   }
+
+  /*
+   * Current page highlighting - applies at all viewport widths.
+   * Automated active link detection sets these classes; no manual body
+   * classes needed.
+   */
+  li.active a,
+  a.active {
+    color: var(--color-link-inactive);
+    pointer-events: none;
+    cursor: default;
+  }
+
+  /*
+   * Path highlighting - when the current page is within this menu section.
+   * Example: /blog/my-post/ gives the /blog link an .active-path class.
+   */
+  li.active-path a,
+  a.active-path {
+    color: var(--color-link-in-path);
+  }
 }
 
 /* Mobile menu styles - activated when header container is narrow */
@@ -144,26 +165,6 @@
     /* Reset desktop hover effects for mobile */
     a:hover {
       transform: none;
-    }
-
-    /**
-    * Current page highlighting - Automated active link detection
-    * No need to manually add body classes anymore
-    */
-    li.active a,
-    a.active {
-      color: var(--color-link-inactive) !important;
-      pointer-events: none;
-      cursor: default;
-    }
-
-    /**
-    * Path highlighting - When current page is within this menu section
-    * Example: /blog/my-post/ would make the /blog link have active-path class
-    */
-    li.active-path a,
-    a.active-path {
-      color: var(--color-link-in-path) !important;
     }
   }
 }
