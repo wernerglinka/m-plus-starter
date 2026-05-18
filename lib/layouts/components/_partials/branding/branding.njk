@@ -1,8 +1,5 @@
-{% macro branding(link, img) %}
-{#
+{% macro branding(link, text) %}
 <div class="brand">
-  <a class="home-link" href="{{ link }}"><img src="{{ img.src }}" alt="{{ img.alt }}"></a>
+  <a class="home-link" href="{{ link }}">{{ text }}</a>
 </div>
-#}
-
 {% endmacro %}

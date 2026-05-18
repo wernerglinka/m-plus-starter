@@ -1,6 +1,6 @@
 ---
 layout: pages/sections.njk
-bodyClasses: 'sections-page'
+bodyClasses: 'sections-page home-page'
 hasHero: true
 
 navigation:

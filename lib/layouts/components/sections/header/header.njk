@@ -20,10 +20,7 @@
   {% endif %}
 
   <header>
-      {% set link = '/' %}
-      {% set img = { src: '/assets/images/metalsmith2025-logo-bug.png', alt: 'Metalsmith Starter' } %}
-
-      {{ branding( link, img ) }}
+      {{ branding('/', 'M+ Starter') }}
 
       {{ navigation( mainMenu, urlPath )}}
   </header>

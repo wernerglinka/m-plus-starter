@@ -17,6 +17,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-link-navigation);
+    padding: 8px 12px 4px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.6s ease;
+
+    &:hover {
+      border-bottom-color: var(--color-border-light);
+    }
 
     /* could be a svg or an img */
 
@@ -35,4 +43,11 @@
   &:hover svg {
     transform: scale(1.05);
   }
+}
+
+/* On the home page itself, the brand link points to where you already are */
+.home-page .brand .home-link {
+  pointer-events: none;
+  cursor: default;
+  color: var(--color-text);
 }
